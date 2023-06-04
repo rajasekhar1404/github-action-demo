@@ -30,4 +30,11 @@ jobs:
         run: echo Hello, world!
 
       - name: Push to raja
-        run: ls -ltr
+        run: |
+          git clone https://github.com/rajasekhar1404/github-action-demo
+          cd github-action-demo
+          git checkout raja
+          touch new.txt
+          git add .
+          git commit -m "new added"
+          git push -u origin raja
