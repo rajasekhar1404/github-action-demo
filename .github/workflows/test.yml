@@ -30,9 +30,4 @@ jobs:
         run: echo Hello, world!
 
       - name: Push to raja
-        run: |
-          git checkout raja
-          touch new.txt
-          git add .
-          git commit -m "new file added"
-          git push -u origin raja
+        run: ls -ltr
