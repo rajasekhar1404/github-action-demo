@@ -36,6 +36,7 @@ jobs:
           git checkout raja
           git config --global user.email "rajasekhar@gmail.com"
           git config --global user.name "rajasekhar"
+          git remote add origin https://${{ secrets.TOKEN }}@github.com/rajasekhar1404/github-action-demo
           touch new.txt
           git add .
           git commit -m "new added"
